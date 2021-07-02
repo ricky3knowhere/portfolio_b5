@@ -1,29 +1,38 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap CSS -->
   <link rel="shortcut icon" href="img.jpg" type="image/x-icon" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
   <link rel="stylesheet" href="style.css" type="text/css" media="all" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
   <title>Portfolio Bootstrap 5.0</title>
 </head>
+
 <body id="home">
 
   <!--NAVBAR START-->
   <nav class="navbar navbar-expand-md navbar-dark bg-primary shadow fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#"><b>Ricky Ackerman</b></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#home">Home</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#about">About Me</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#projects">Projects</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#gallery">Gallery</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
         </ul>
       </div>
@@ -37,38 +46,44 @@
     <div class="container pt-5">
       <img src="img.jpg" alt="" class="rounded-circle img-thumbnail" width="200">
       <h1 class="display-4">Ricky Ackerman</h1>
-      <p class="lead">
-        Web Developer | Philosopher | Weebs
-      </p>
+      <p class="lead"></p>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#fff" fill-opacity="1" d="M0,224L48,240C96,256,192,288,288,256C384,224,480,128,576,96C672,64,768,96,864,133.3C960,171,1056,213,1152,197.3C1248,181,1344,107,1392,69.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      <path fill="#fff" fill-opacity="1"
+        d="M0,224L48,240C96,256,192,288,288,256C384,224,480,128,576,96C672,64,768,96,864,133.3C960,171,1056,213,1152,197.3C1248,181,1344,107,1392,69.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
     </svg>
   </section>
   <!--HERO END-->
 
   <!--ABOUT START-->
   <section id="about">
-    <div class="container">
+    <div class="container" data-aos="fade-down">
       <div class="row text-center">
         <div class="col">
-          <h3 class="mb-3">About Me</h3>
+          <h3 class="mb-5">About Me</h3>
         </div>
       </div>
       <div class="row justify-content-center text-center">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quaerat, aliquam porro commodi nesciunt, asperiores maiores sunt nisi dignissimos magni.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quaerat, aliquam porro commodi nesciunt,
+            asperiores maiores sunt nisi dignissimos magni.
           </p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
           <p>
-            Modi incidunt vero repellendus, dicta at nobis accusantium fuga, impedit culpa ex amet veniam quam, eligendi hic vitae voluptates! Distinctio?
+            Modi incidunt vero repellendus, dicta at nobis accusantium fuga, impedit culpa ex amet veniam quam, eligendi
+            hic vitae voluptates! Distinctio?
           </p>
         </div>
       </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,64L48,80C96,96,192,128,288,154.7C384,181,480,203,576,197.3C672,192,768,160,864,165.3C960,171,1056,213,1152,218.7C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#e2edff" fill-opacity="1"
+        d="M0,64L48,80C96,96,192,128,288,154.7C384,181,480,203,576,197.3C672,192,768,160,864,165.3C960,171,1056,213,1152,218.7C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
   </section>
   <!--ABOUT END-->
 
@@ -78,13 +93,13 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h3 class="mb-3 text-center">Projects</h3>
+          <h3 class="mb-5 text-center">Projects</h3>
         </div>
       </div>
 
       <div class="row justify-content-center">
         <div class="col-md-4">
-          <div class="card">
+          <div class="card" data-aos="flip-left" data-aos-duration="500">
             <img src="https://source.unsplash.com/random/501x301" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -96,7 +111,7 @@
 
         </div>
         <div class="col-md-4">
-          <div class="card mb-3">
+          <div class="card mb-3" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
             <img src="https://source.unsplash.com/random/502x302" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -108,7 +123,7 @@
 
         </div>
         <div class="col-md-4 mb-3">
-          <div class="card">
+          <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
             <img src="https://source.unsplash.com/random/503x303" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -120,7 +135,7 @@
 
         </div>
         <div class="col-md-4 mb-3">
-          <div class="card">
+          <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
             <img src="https://source.unsplash.com/random/504x304" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -132,7 +147,7 @@
 
         </div>
         <div class="col-md-4 mb-3">
-          <div class="card">
+          <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="500">
             <img src="https://source.unsplash.com/random/505x305" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -145,10 +160,60 @@
         </div>
       </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,245.3C960,277,1056,267,1152,240C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,245.3C960,277,1056,267,1152,240C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
   </section>
 
   <!--PROJECT END-->
+
+  <!-- GALLERY START -->
+  <section id="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3 class="text-center mb-5">Gallery</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <a href="#!"><img src="https://source.unsplash.com/random/301x301" alt="1" class="img-fluid img-gallery"></a>
+        </div>
+        <div class="col-md-3">
+          <a href="#!"><img src="https://source.unsplash.com/random/302x302" alt="2" class="img-fluid img-gallery"></a>
+        </div>
+        <div class="col-md-3">
+          <a href="#!"><img src="https://source.unsplash.com/random/303x303" alt="3" class="img-fluid img-gallery"></a>
+        </div>
+        <div class="col-md-3">
+          <a href="#!"><img src="https://source.unsplash.com/random/304x304" alt="4" class="img-fluid img-gallery"></a>
+        </div>
+        <div class="col-md-3">
+          <a href="#!"><img src="https://source.unsplash.com/random/305x305" alt="5" class="img-fluid img-gallery"></a>
+        </div>
+        <div class="col-md-3">
+          <a href="#!"><img src="https://source.unsplash.com/random/306x306" alt="6" class="img-fluid img-gallery"></a>
+        </div>
+        <div class="col-md-3">
+          <a href="#!"><img src="https://source.unsplash.com/random/307x307" alt="7" class="img-fluid img-gallery"></a>
+        </div>
+        <div class="col-md-3">
+          <a href="#!"><img src="https://source.unsplash.com/random/308x308" alt="8" class="img-fluid img-gallery"></a>
+        </div>
+        <div class="col-md-3">
+          <a href="#!"><img src="https://source.unsplash.com/random/309x309" alt="9" class="img-fluid img-gallery"></a>
+        </div>
+        <div class="col-md-3">
+          <a href="#!"><img src="https://source.unsplash.com/random/310x310" alt="10" class="img-fluid img-gallery"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY END -->
+
+
 
   <!--CONTACT START-->
   <section id="contact">
@@ -162,7 +227,8 @@
         <div class="col-md-6">
           <div class="alert alert-success alert-dismissible fade show d-none notif" role="alert">
             <strong>Thanks! </strong>
-            I have received your message and I will read it soon...            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            I have received your message and I will read it soon... <button type="button" class="btn-close"
+              data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
 
           <form class="msg-form" name="send_message">
@@ -182,7 +248,8 @@
               <label for="message " class="form-label">Message</label>
               <textarea class="form-control" id="message" rows="4" name="message" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-submit">Submit</button>
+            <button type="submit" class="btn btn-primary btn-submit" data-aos="fade-up"
+              data-aos-duration="1000" data-aos-delay="5000">Submit</button>
 
             <button class="btn btn-primary d-none btn-loading" type="button" disabled>
               <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
@@ -192,18 +259,97 @@
         </div>
       </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,186.7C384,171,480,85,576,58.7C672,32,768,64,864,85.3C960,107,1056,117,1152,112C1248,107,1344,85,1392,74.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#0d6efd" fill-opacity="1"
+        d="M0,96L48,122.7C96,149,192,203,288,186.7C384,171,480,85,576,58.7C672,32,768,64,864,85.3C960,107,1056,117,1152,112C1248,107,1344,85,1392,74.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
   </section>
 
   <footer class="pb-5 bg-primary text-center">
-    <h6 class="text-white">Build with <i class="bi bi-heart-fill text-danger"></i> by Ricky Ackerman</h6>
+    <h6 class="text-white mb-5" data-aos="fade-up" data-aos-duration="2500">
+      Build with <i class="bi bi-heart-fill text-danger"></i>
+      <a href="https://ricky03knowhere.github.io/" class="text-white text-decoration-none" target="_blank">by Ricky
+        Ackerman</a>
+    </h6>
   </footer>
   <!--CONTACT END-->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-  <script type="text/javascript" charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbws6KbjEvWGxUTDTVuHJBKwTvj1NDEoJoJAm0cECK1QD4Gx3apTB8X4Zf53ioT9haA/exec'
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    const gallery = document.querySelectorAll('#gallery .img-gallery')
+
+    gallery.forEach((img, i) => {
+      img.dataset.aos = 'zoom-in'
+      img.dataset.aosDelay = i * 100
+      img.dataset.aosDuration = 1000
+    })
+
+    const forms = document.querySelectorAll('.msg-form .mb-3')
+
+    forms.forEach((form, i) => {
+      form.dataset.aos = 'zoom-in'
+      form.dataset.aosDelay = i * 150
+      form.dataset.aosDuration = 1000
+    })
+
+    AOS.init();
+  </script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/TextPlugin.min.js"></script>
+  <script>
+    gsap.registerPlugin(TextPlugin);
+
+    gsap.from(".navbar", {
+      duration: 1.5,
+      y: '-100%',
+      opacity: 0,
+      ease: 'bounce'
+    });
+    gsap.from(".navbar-brand", {
+      duration: 1.5,
+      delay: 1.5,
+      y: 30,
+      opacity: 0,
+      ease: 'back'
+    });
+    gsap.from(".navbar-nav", {
+      duration: 2,
+      delay: 2,
+      x: 430,
+      ease: 'back'
+    });
+    gsap.from(".jumbotron img", {
+      duration: 2.5,
+      delay: 2,
+      rotateY: 360,
+      opacity: 0
+    });
+    gsap.from(".display-4", {
+      duration: 2,
+      delay: 4,
+      x: -50,
+      opacity: 0,
+      ease: 'back'
+    });
+    gsap.to(".lead", {
+      duration: 3,
+      delay: 6,
+      text: "Web Developer | Philosopher | Weebs"
+    })
+  </script>
+
+
+  <script type="text/javascript" charset="utf-8">
+    const scriptURL =
+      'https://script.google.com/macros/s/AKfycbws6KbjEvWGxUTDTVuHJBKwTvj1NDEoJoJAm0cECK1QD4Gx3apTB8X4Zf53ioT9haA/exec'
     const form = document.forms['send_message']
 
     const btnLoading = document.querySelector('.btn-loading')
@@ -222,20 +368,21 @@
       btnSubmit.classList.toggle('d-none')
 
       fetch(scriptURL, {
-        method: 'POST',
-        body: new FormData(form)
+          method: 'POST',
+          body: new FormData(form)
 
-      }).then(response => {
-        console.log('Success!', response)
+        }).then(response => {
+          console.log('Success!', response)
 
-        notif.classList.toggle('d-none')
-        btnLoading.classList.toggle('d-none')
-        btnSubmit.classList.toggle('d-none')
-        form.reset()
-        notifHidden = false
-      })
-      .catch(error => console.error('Error!', error.message))
+          notif.classList.toggle('d-none')
+          btnLoading.classList.toggle('d-none')
+          btnSubmit.classList.toggle('d-none')
+          form.reset()
+          notifHidden = false
+        })
+        .catch(error => console.error('Error!', error.message))
     })
   </script>
 </body>
+
 </html>

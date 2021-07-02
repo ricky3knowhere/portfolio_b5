@@ -11,4 +11,11 @@ section {
   padding-top: 70px;
 }
 
+#gallery .row > * {
+  padding: 0;
+}
+#gallery .img-gallery {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
