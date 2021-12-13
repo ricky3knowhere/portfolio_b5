@@ -11,11 +11,88 @@ section {
   padding-top: 70px;
 }
 
-#gallery .row > * {
+#gallery > row > * {
   padding: 0;
 }
 #gallery .img-gallery {
   width: 100%;
+}
+
+#keyboard {
+  background: #e2edff;
+}
+#keyboard .card {
+  height: 26em;
+  border-radius: 1em;
+  position: relative;
+  padding: 1em;
+  align-items: center;
+  display: flex;
+  transform-style: preserve-3d;
+}
+#keyboard .card h5 {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  position: relative;
+  transition: 0.6s ease-out;
+  top: 1em;
+}
+#keyboard .card .keyboard-img {
+  width: 19em;
+  top: 4.5em;
+  position: relative;
+  transition: 0.3s ease-out;
+  display: inline-block;
+}
+#keyboard .card .keyboard-img.k3 {
+  top: 1em;
+}
+#keyboard .card::before, #keyboard .card::after {
+  display: block;
+  font-size: 2.5rem;
+  position: absolute;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.5s ease-out;
+  opacity: 0;
+}
+#keyboard .card::before {
+  top: 1em;
+  content: "My";
+  transform: translateX(-6em);
+}
+#keyboard .card::after {
+  bottom: 1.7em;
+  content: "Keyboard";
+}
+#keyboard .card:hover .keyboard-img {
+  transform: scale(1.3) rotate(8deg) translateZ(4em);
+  filter: drop-shadow(3px 3px 0.5em #000000af);
+}
+#keyboard .card:hover::before {
+  opacity: 0.5;
+  transform: translateX(0);
+}
+#keyboard .card:hover::after {
+  opacity: 0.5;
+}
+#keyboard .card:hover .btn {
+  opacity: 1;
+  transform: translate(-50%, 50%) translateZ(4em);
+}
+#keyboard .card:hover h5 {
+  transform: translateZ(6em);
+}
+#keyboard .btn {
+  position: absolute;
+  bottom: 2.3em;
+  left: 50%;
+  opacity: 0;
+  transition: 0.5s ease-in;
+  transform: translate(-50%, 50%);
 }
 
 /*# sourceMappingURL=style.css.map */
